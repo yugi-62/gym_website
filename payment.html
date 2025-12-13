@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Website - 결제</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <header class="container"><h1><a href="index.html">GYM LOGO</a></h1></header>
+    <main class="container">
+        <h2>수강권 결제</h2>
+        <div class="payment-options">
+            <!-- 개월 수 선택, 할인 쿠폰 등 -->
+            <label><input type="radio" name="month" value="1"> 1개월</label>
+            <label><input type="radio" name="month" value="3"> 3개월</label>
+            <label><input type="radio" name="month" value="6"> 6개월</label>
+        </div>
+        <div class="total-price">
+            총 결제 금액: <span>0원</span>
+        </div>
+        <button id="btn-pay">결제하기</button>
+    </main>
+    <footer></footer>
+    <script src="js/common.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

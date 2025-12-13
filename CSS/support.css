@@ -1,0 +1,4 @@
+/* support.css */
+.faq-item { border-bottom: 1px solid #ddd; padding: 15px 0; }
+.question { font-weight: bold; cursor: pointer; }
+.answer { display: none; margin-top: 10px; color: #666; }

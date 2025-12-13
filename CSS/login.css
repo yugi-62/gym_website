@@ -1,0 +1,3 @@
+/* login.css */
+#login-form { display: flex; flex-direction: column; width: 300px; margin: 0 auto; gap: 10px; }
+.links { text-align: center; margin-top: 10px; }
