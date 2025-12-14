@@ -8,16 +8,31 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <header class="container"><h1><a href="index.html">GYM LOGO</a></h1></header>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">GYM LOGO</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">소개</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="exercise.html">운동안내</a></li>
+                    <li><a href="support.html">고객센터</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="container">
-        <h2>로그인</h2>
-        <form id="login-form">
-            <input type="text" placeholder="아이디" required>
-            <input type="password" placeholder="비밀번호" required>
-            <button type="submit">로그인</button>
-        </form>
-        <div class="links">
-            <a href="#">회원가입</a> | <a href="#">아이디/비밀번호 찾기</a>
+        <h2 class="page-title">로그인</h2>
+        <div class="login-container">
+            <form id="login-form">
+                <input type="text" id="user-id" placeholder="아이디" required>
+                <input type="password" id="user-pw" placeholder="비밀번호" required>
+                <button type="submit">로그인</button>
+            </form>
+            <div class="links">
+                <a href="#">회원가입</a> | <a href="#">아이디/비밀번호 찾기</a>
+            </div>
         </div>
     </main>
     <footer></footer>

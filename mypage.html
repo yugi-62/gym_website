@@ -8,17 +8,33 @@
     <link rel="stylesheet" href="css/mypage.css">
 </head>
 <body>
-    <header class="container"><h1><a href="index.html">GYM LOGO</a></h1></header>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">GYM LOGO</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">소개</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="exercise.html">운동안내</a></li>
+                    <li><a href="support.html">고객센터</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="container">
-        <h2>마이페이지</h2>
-        <div class="user-info">
-            <p>회원님 안녕하세요.</p>
+        <h2 class="page-title">마이페이지</h2>
+        <div class="mypage-container">
+            <div class="user-info">
+                <p>회원님 안녕하세요.</p>
+            </div>
+            <div class="status-grid">
+                <!-- JS로 등록 현황 및 사물함 정보가 로드됩니다 -->
+            </div>
+            <div class="action-buttons">
+                <a href="payment.html" class="btn-renew">연장하기</a>
+            </div>
         </div>
-        <div class="status">
-            <h3>등록 현황</h3>
-            <!-- 남은 일수, 사물함 정보 등 -->
-        </div>
-        <a href="payment.html" class="btn-renew">연장하기</a>
     </main>
     <footer></footer>
     <script src="js/common.js"></script>

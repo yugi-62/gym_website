@@ -6,11 +6,43 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/support.css">
+    <style>
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin: 50px 0 40px;
+            letter-spacing: -1px;
+        }
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 <body>
-    <header class="container"><h1><a href="index.html">GYM LOGO</a></h1></header>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">GYM LOGO</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">소개</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="exercise.html">운동안내</a></li>
+                    <li><a href="support.html">고객센터</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="container">
-        <h2>자주 묻는 질문 (FAQ)</h2>
+        <h2 class="page-title">자주 묻는 질문 (FAQ)</h2>
         <div class="faq-list">
             <div class="faq-item">
                 <div class="question">Q. 헬스장 어디가 좋아요?</div>
