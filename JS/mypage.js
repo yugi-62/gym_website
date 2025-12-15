@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // localStorage.removeItem('gym_user_data');
+    localStorage.removeItem('gym_user_data');
     // // 디버그용 초기화
 
     // localStorage에서 사용자 데이터 가져오기

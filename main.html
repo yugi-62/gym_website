@@ -1,44 +1,50 @@
-gym-website/
-│
-├─ index.html              // 메인 페이지
-├─ intro.html              // 헬스장 소개
-├─ notice.html             // 공지사항 / 모집 / 이벤트
-├─ exercise.html           // 운동 안내
-├─ login.html              // 로그인 페이지
-├─ mypage.html             // 개인 페이지
-├─ payment.html            // 결제 페이지
-├─ support.html            // 고객센터 (FAQ)
-│
-├─ css/
-│   ├─ reset.css           // 기본 스타일 초기화
-│   ├─ common.css          // 공통 레이아웃, 헤더, 푸터
-│   ├─ index.css           // 메인 페이지 스타일
-│   ├─ intro.css
-│   ├─ notice.css
-│   ├─ exercise.css
-│   ├─ login.css
-│   ├─ mypage.css
-│   ├─ payment.css
-│   └─ support.css
-│
-├─ js/
-│   ├─ common.js           // 메뉴 이동, 공통 기능
-│   ├─ notice.js           // 공지/모집/이벤트 처리
-│   ├─ exercise.js         // 운동기구 설명, 영상 처리
-│   ├─ auth.js             // 로그인 로직
-│   ├─ mypage.js           // 등록 현황, 사물함, 남은 일수
-│   ├─ payment.js          // 개월 수 계산, 할인, 쿠폰, 유효성 검사
-│   └─ support.js          // FAQ 토글 기능
-│
-├─ assets/
-│   ├─ images/
-│   │   ├─ trainer/         // 트레이너 사진
-│   │   ├─ machines/        // 운동기구 이미지
-│   │   └─ banner/          // 모집/이벤트 배너
-│   │
-│   └─ videos/
-│       ├─ squat.mp4
-│       ├─ bench.mp4
-│       └─ deadlift.mp4
-│
-└─ README.txt              // 프로젝트 설명 (선택)
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - 홈</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="main.html"><img src="assets/images/sm_logo.jpg" alt="SM Gym Logo" style="height: 60px; width: auto;"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="intro.html">소개</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="exercise.html">운동안내</a></li>
+                    <li><a href="support.html">고객센터</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="welcome-section">
+            <h2>환영합니다!</h2>
+            <p>최고의 시설과 트레이너가 함께하는 SM 62 헬스장입니다.</p>
+        </section>
+        <section class="recruitment-section">
+            <h3>회원 모집</h3>
+            <div id="recruitment-list" class="recruitment-list">
+                <!-- JS로 모집 공고가 로드됩니다 -->
+            </div>
+        </section>
+        <section class="event-section">
+            <h3>진행중인 이벤트</h3>
+            <div id="event-list" class="event-list">
+                <!-- JS로 이벤트가 로드됩니다 -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SM 62 Gym Website. All rights reserved.</p>
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

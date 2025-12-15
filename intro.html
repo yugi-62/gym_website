@@ -24,13 +24,28 @@
             margin: 20px auto 0;
             border-radius: 2px;
         }
+        .trainer-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+        .trainer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .equipment-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
         <!-- 공통 헤더 (실제 구현시 include 방식 고려) -->
         <div class="container">
-            <h1><a href="index.html">GYM LOGO</a></h1>
+            <h1><a href="main.html"><img src="assets/images/sm_logo.jpg" alt="SM Gym Logo" style="height: 60px; width: auto;"></a></h1>
             <nav>
                 <ul>
                     <li><a href="intro.html">소개</a></li>
@@ -52,7 +67,7 @@
                 <div class="trainer-container">
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="https://via.placeholder.com/200x250/cccccc/666666?text=Trainer+1" alt="트레이너 1">
+                            <img src="assets/images/trainer/kim.jpg" alt="김트레이너">
                         </div>
                         <div class="trainer-info">
                             <h4>김트레이너</h4>
@@ -62,7 +77,7 @@
                     </div>
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="https://via.placeholder.com/200x250/cccccc/666666?text=Trainer+2" alt="트레이너 2">
+                            <img src="assets/images/trainer/lee.jpg" alt="이트레이너">
                         </div>
                         <div class="trainer-info">
                             <h4>이트레이너</h4>
@@ -72,7 +87,7 @@
                     </div>
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="https://via.placeholder.com/200x250/cccccc/666666?text=Trainer+3" alt="트레이너 3">
+                            <img src="assets/images/trainer/park.jpg" alt="박트레이너">
                         </div>
                         <div class="trainer-info">
                             <h4>박트레이너</h4>
@@ -88,59 +103,49 @@
                 <h3>운동기구 소개</h3>
                 <div class="equipment-container">
                     <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Treadmill" alt="러닝머신">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>러닝머신</h4>
-                            <p>심폐지구력 향상 및 하체 운동에 효과적</p>
-                        </div>
+                        <a href="exercise.html">
+                            <div class="equipment-image">
+                                <img src="assets/images/machines/RunningMachine.jpg" alt="러닝머신">
+                            </div>
+                            <div class="equipment-info">
+                                <h4>러닝머신</h4>
+                                <p>심폐지구력 향상 및 하체 운동에 효과적</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Dumbbells" alt="덤벨">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>덤벨</h4>
-                            <p>근력 강화 및 전신 운동에 활용되는 기본 운동기구</p>
-                        </div>
+                        <a href="exercise.html">
+                            <div class="equipment-image">
+                                <img src="assets/images/machines/Dumbbell.jpg" alt="덤벨">
+                            </div>
+                            <div class="equipment-info">
+                                <h4>덤벨</h4>
+                                <p>근력 강화 및 전신 운동에 활용되는 기본 운동기구</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Barbell" alt="바벨">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>바벨</h4>
-                            <p>무거운 무게의 근력 운동과 파워 트레이닝</p>
-                        </div>
+                        <a href="exercise.html">
+                            <div class="equipment-image">
+                                <img src="assets/images/machines/Babel.png" alt="바벨">
+                            </div>
+                            <div class="equipment-info">
+                                <h4>바벨</h4>
+                                <p>무거운 무게의 근력 운동과 파워 트레이닝</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Rowing" alt="로잉머신">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>로잉머신</h4>
-                            <p>등, 팔, 다리 등 전신 운동 효과</p>
-                        </div>
-                    </div>
-                    <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Bike" alt="사이클">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>에어로바이크</h4>
-                            <p>저강도 유산소 운동 및 하체 근력 강화</p>
-                        </div>
-                    </div>
-                    <div class="equipment-card">
-                        <div class="equipment-image">
-                            <img src="https://via.placeholder.com/200x150/e8f4f8/333333?text=Bench" alt="벤치">
-                        </div>
-                        <div class="equipment-info">
-                            <h4>운동벤치</h4>
-                            <p>프리 웨이트 운동 시 기본적으로 사용되는 장비</p>
-                        </div>
-                    </div>
+                        <a href="exercise.html">
+                            <div class="equipment-image">
+                                <img src="assets/images/machines/bench.jpg" alt="벤치">
+                            </div>
+                            <div class="equipment-info">
+                                <h4>운동벤치</h4>
+                                <p>프리 웨이트 운동 시 기본적으로 사용되는 장비</p>
+                            </div>
+                        </a>
+                    </div>  
                 </div>
             </section>
 
